@@ -9,6 +9,8 @@ router.get('/', (req, res) => {
 router.post('/api/login', usersController.login);
 router.post('/api/signin', usersController.addUser);
 router.get('/api/info', infoController.getInfo);
+router.get('/api/info/:matricula', infoController.getInfoByName);
 router.post('/api/info', infoController.addInfo);
+
 
 module.exports = router;
